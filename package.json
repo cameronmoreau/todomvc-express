@@ -15,7 +15,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "deploy": "now-pipeline --test 'npm run prod-test'",
-    "prune-deploys": "now-pipeline-prune"
+    "prune-deploys": "now-pipeline-prune",
+    "build-docker": "docker build -t \"test-cache\" ."
   },
   "repository": {
     "type": "git",
