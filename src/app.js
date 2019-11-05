@@ -130,4 +130,9 @@ app.delete('/', deleteTodo, broadcast, toIndex)
 app.patch('/', markTodo, broadcast, toIndex)
 app.post('/clear-completed', clearCompleted, broadcast, toIndex)
 
+// test
+app.get("/test", (req, res) => {
+  res.send("Did docker cache?");
+});
+
 module.exports = app
